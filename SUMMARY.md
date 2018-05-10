@@ -1,7 +1,7 @@
 # Table of contents
 
-* [wiki](README.md)
-* [Welcome](tutorials-1.md)
+* [Welcome to Nebulas Guide](README.md)
+* [Category](tutorials-1.md)
 * Go-Nebulas
   * [Design Overview](go-nebulas/overview/README.md)
     * [Blockchain](go-nebulas/overview/blockchain.md)

@@ -6,7 +6,7 @@
 
 Nebulas is a next-generation public blockchain. It introduces Nebulas Rank \(NR\), a new measure of value for every unit of the blockchain universe, like addresses, DApps and smart contracts. Based on NR, it involves Nebulas Incentive \(NI\), which incentives developers with Developer Incentive Protocol, and users with the Proof of Devotion consensus algorithm. Moreover, it proposes Nebulas Force \(NF\), which gives the blockchain and smart contracts within it a self-evolving capacity. In unison, NR, NI, and NF produce a continuously improving and expanding blockchain ecosystem.
 
-There are three technical features: value ranking, self-evolution, and developer incentive.
+There are three technical features: value ranking, self-evolution, and native incentive.
 
 Facing the opportunity and challenge as above, we aim to create a self-evolving blockchain system based on value incentive.
 

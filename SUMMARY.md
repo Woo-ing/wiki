@@ -2,6 +2,10 @@
 
 * [Welcome to Nebulas Guide](README.md)
 * [Category](tutorials-1.md)
+* [What's Nebulas](whats-nebulas/README.md)
+  * [Nebulas Rank \(NR\)](whats-nebulas/nebulas-rank-nr.md)
+  * [Nebulas Force \(NF\)](whats-nebulas/nebulas-force.md)
+  * [Nebulas Incentive \(NI\)](whats-nebulas/nebulas-incentive-ni.md)
 * Go-Nebulas
   * [Design Overview](go-nebulas/overview/README.md)
     * [Blockchain](go-nebulas/overview/blockchain.md)

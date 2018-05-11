@@ -53,4 +53,5 @@
   * [permission\_control\_in\_smart\_contract](infrastructure/permission_control_in_smart_contract.md)
 * [Licensing](licensing/README.md)
   * [Config](licensing/config.md)
+  * [Contributors](licensing/contributors.md)
 

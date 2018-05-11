@@ -6,21 +6,23 @@ This Guide is in progress. Welcome to edit it and help more users and developers
 
 ## **Nebulas** is a next-generation public blockchain, aiming for a continuously improving ecosystem. 
 
-## Principles
+## Introduction
 
-The Nebulas blockchain has three major principles:
+This documentation is created by Nebulas fans. We welcome everyone to help us.
 
-### Value ranking 
+This documentation includes three parts:
 
-To enable value discovery in blockchain, **Nebulas Rank** measures multidimensional data in the blockchain world and powers the decentralized search framework. 
+#### 1 Introduction. 
 
-### Self-evolution 
+What's Nebulas? Principles, technology features, history, community, Nebulas Foundations and many others. Everything about Nebulas.
 
-To avoid the damage caused by forking to the blockchain, **Nebulas Force** enables rapid iteration and upgradability to its blockchain without the need for hard forks. 
+#### 2 Go-Nebulas.
 
-### Native incentives
+Roadmap, papers.
 
-With forward-looking incentive and consensus mechanisms, the **Nebulas Incentive** rewards developers and users who contribute to the sustainability and growth of the ecosystem.
+#### 3 DApp Development.
+
+How to build a Dapp on Nebulas, tutorials.
 
 
 

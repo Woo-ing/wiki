@@ -10,26 +10,10 @@ Welcome to nebulas wiki's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   README
-   SUMMARY
    tutorials-1
    whats-nebulas/README
-   whats-nebulas/nebulas-rank-nr
-   whats-nebulas/nebulas-force
-   whats-nebulas/nebulas-incentive-ni
    go-nebulas/overview/README.md
-   go-nebulas/overview/blockchain.md
-   go-nebulas/overview/merkle_trie.md
-   go-nebulas/overview/consensus.md
-   go-nebulas/overview/transaction_process.md
-   go-nebulas/overview/event.md
-   go-nebulas/overview/gas.md
-   go-nebulas/overview/log.md
-   go-nebulas/overview/address.md
-   go-nebulas/develop/contribute.md
-   go-nebulas/develop/delve.md
-   go-nebulas/develop/debuging-with-gdb.md
-   go-nebulas/develop/neb-dont-generate-coredump-file.md
+   go-nebulas/develop/README.rst
    go-nebulas/tutorials/README.md
    go-nebulas/tutorials/english-nebulas-101-01-installation.md
    go-nebulas/tutorials/english-nebulas-101-02-transaction.md

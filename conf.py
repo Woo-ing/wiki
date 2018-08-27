@@ -143,6 +143,7 @@ latex_elements = {
     \setCJKfamilyfont{sf}{WenQuanYi Micro Hei}
     \XeTeXlinebreaklocale "zh"
     \XeTeXlinebreakskip = 0pt plus 1pt
+    """
 }
 
 # Grouping the document tree into LaTeX files. List of tuples

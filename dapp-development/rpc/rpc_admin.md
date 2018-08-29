@@ -58,7 +58,7 @@ none
 
 `RouteTable*[] route_table` the network routeTable
 
-```text
+```js
 message RouteTable {
     string id = 1;
     repeated string address = 2;
@@ -67,11 +67,11 @@ message RouteTable {
 
 **HTTP Example**
 
-```text
-// Request
+```bash
+# Request
 curl -i -H 'Content-Type: application/json' -X GET http://localhost:8685/v1/admin/nodeinfo
 
-// Result
+# Result
 {
     "result":{
         "id":"QmP7HDFcYmJL12Ez4ZNVCKjKedfE7f48f1LAkUc3Whz4jP",
@@ -119,11 +119,11 @@ none
 
 #### HTTP Example
 
-```text
-// Request
+```bash
+# Request
 curl -i -H 'Content-Type: application/json' -X GET http://localhost:8685/v1/admin/accounts
 
-// Result
+# Result
 {
     "result":{
         "addresses":[
@@ -160,11 +160,11 @@ NewAccount create a new account with passphrase.
 
 **HTTP Example**
 
-```text
-// Request
+```bash
+# Request
 curl -i -H 'Content-Type: application/json' -X POST http://localhost:8685/v1/admin/account/new -d '{"passphrase":"passphrase"}'
 
-// Result
+# Result
 
 {
     "result":{
@@ -196,11 +196,11 @@ UnlockAccount unlock account with passphrase. After the default unlock time, the
 
 **HTTP Example**
 
-```text
-// Request
+```bash
+# Request
 curl -i -H 'Content-Type: application/json' -X POST http://localhost:8685/v1/admin/account/unlock -d '{"address":"n1czGUvbQQton6KUWga4wKDLLKYDEn39mEk","passphrase":"passphrase","duration":"1000000000"}'
 
-// Result
+# Result
 {
     "result":{
         "result":true
@@ -227,11 +227,11 @@ LockAccount lock account.
 
 **HTTP Example**
 
-```text
-// Request
+```bash
+# Request
 curl -i -H 'Content-Type: application/json' -X POST http://localhost:8685/v1/admin/account/lock -d '{"address":"n1czGUvbQQton6KUWga4wKDLLKYDEn39mEk"}'
 
-// Result
+# Result
 {
     "result":{
         "result":true
@@ -260,11 +260,11 @@ SignTransactionWithPassphrase sign transaction. The transaction's from addrees m
 
 **sign normal transaction Example**
 
-```text
-// Request
+```bash
+# Request
 curl -i -H 'Content-Type: application/json' -X POST http://localhost:8685/v1/admin/sign -d '{"transaction":{"from":"n1QZMXSZtW7BUerroSms4axNfyBGyFGkrh5","to":"n1QZMXSZtW7BUerroSms4axNfyBGyFGkrh5", "value":"1000000000000000000","nonce":1,"gasPrice":"1000000","gasLimit":"2000000"}, "passphrase":"passphrase"}'
 
-// Result
+# Result
 {
     "result":{
         "data":"CiBOW15yoZ+XqQbMNr4bQdJCXrBTehJKukwjcfW5eASgtBIaGVduKnw+6lM3HBXhJEzzuvv3yNdYANelaeAaGhlXbip8PupTNxwV4SRM87r798jXWADXpWngIhAAAAAAAAAAAA3gtrOnZAAAKAEwucHt1QU6CAoGYmluYXJ5QGRKEAAAAAAAAAAAAAAAAAAPQkBSEAAAAAAAAAAAAAAAAAAehIBYAWJB/BwhwhqUkp/gEJtE4kndoc7NdSgqD26IQqa0Hjbtg1JaszAvHZiW+XH7C+Ky9XTKRJKuTOc446646d/Sbz/nxQE="
@@ -295,11 +295,11 @@ SendTransactionWithPassphrase send transaction with passphrase.
 
 **Example**
 
-```text
-// Request
+```bash
+# Request
 curl -i -H 'Content-Type: application/json' -X POST http://localhost:8685/v1/admin/transactionWithPassphrase -d '{"transaction":{"from":"n1QZMXSZtW7BUerroSms4axNfyBGyFGkrh5","to":"n1QZMXSZtW7BUerroSms4axNfyBGyFGkrh5", "value":"1000000000000000000","nonce":1,"gasPrice":"1000000","gasLimit":"2000000"},"passphrase":"passphrase"}'
 
-// Result
+# Result
 {
     "result":{
         "hash":"143eac221da8079f017bd6fd6b6a08ea0623114c93c638b94334d16aae109666",
@@ -365,11 +365,11 @@ Notice:
 
 **Normal Transaction Example**
 
-```javascript
-// Request
+```bash
+# Request
 curl -i -H 'Content-Type: application/json' -X POST http://localhost:8685/v1/admin/transaction -d '{"from":"n1QZMXSZtW7BUerroSms4axNfyBGyFGkrh5","to":"n1SAeQRVn33bamxN4ehWUT7JGdxipwn8b17", "value":"1000000000000000000","nonce":1000,"gasPrice":"1000000","gasLimit":"2000000"}'
 
-// Result
+# Result
 {
     "result":{
       "txhash":"fb5204e106168549465ea38c040df0eacaa7cbd461454621867eb5abba92b4a5",
@@ -380,12 +380,12 @@ curl -i -H 'Content-Type: application/json' -X POST http://localhost:8685/v1/adm
 
 **Deploy Smart Contract Example**
 
-```javascript
-// Request
+```bash
+# Request
 curl -i -H 'Content-Type: application/json' -X POST http://localhost:8685/v1/admin/transaction -d '{"from":"n1QZMXSZtW7BUerroSms4axNfyBGyFGkrh5","to":"n1QZMXSZtW7BUerroSms4axNfyBGyFGkrh5", "value":"0","nonce":2,"gasPrice":"1000000","gasLimit":"2000000","contract":{
 "source":"\"use strict\";var BankVaultContract=function(){LocalContractStorage.defineMapProperty(this,\"bankVault\")};BankVaultContract.prototype={init:function(){},save:function(height){var deposit=this.bankVault.get(Blockchain.transaction.from);var value=new BigNumber(Blockchain.transaction.value);if(deposit!=null&&deposit.balance.length>0){var balance=new BigNumber(deposit.balance);value=value.plus(balance)}var content={balance:value.toString(),height:Blockchain.block.height+height};this.bankVault.put(Blockchain.transaction.from,content)},takeout:function(amount){var deposit=this.bankVault.get(Blockchain.transaction.from);if(deposit==null){return 0}if(Blockchain.block.height<deposit.height){return 0}var balance=new BigNumber(deposit.balance);var value=new BigNumber(amount);if(balance.lessThan(value)){return 0}var result=Blockchain.transfer(Blockchain.transaction.from,value);if(result>0){deposit.balance=balance.dividedBy(value).toString();this.bankVault.put(Blockchain.transaction.from,deposit)}return result}};module.exports=BankVaultContract;","sourceType":"js", "args":""}}'
 
-// Result
+# Result
 {
     "result":{
         "txhash":"3a69e23903a74a3a56dfc2bfbae1ed51f69debd487e2a8dea58ae9506f572f73",
@@ -417,11 +417,11 @@ SignHash sign the hash of a message.
 
 **sign normal transaction Example**
 
-```text
-// Request
+```bash
+# Request
 curl -i -H 'Content-Type: application/json' -X POST http://localhost:8685/v1/admin/sign/hash -d '{"address":"n1QZMXSZtW7BUerroSms4axNfyBGyFGkrh5","hash":"W+rOKNqs/tlvz02ez77yIYMCOr2EubpuNh5LvmwceI0=","alg":1}'
 
-// Result
+# Result
 {
     "result":{
         "data":"a7HHsLRvKTNazD1QEogY+Fre8KmBIyK+lNa4zv0Z72puFVkY9uZD6nGixGx/6s1x6Baq7etGwlDNxVvHsoGWbAA="
@@ -448,11 +448,11 @@ StartPprof starts pprof
 
 **Example**
 
-```text
-// Request
+```bash
+# Request
 curl -i -H 'Content-Type: application/json' -X POST http://localhost:8685/v1/admin/pprof -d '{"listen":"0.0.0.0:1234"}'
 
-// Result
+# Result
 {
     "result":{
         "result":true
@@ -479,11 +479,11 @@ none
 
 **Example**
 
-```text
-// Request
+```bash
+# Request
 curl -i -H 'Content-Type: application/json' -X GET http://localhost:8685/v1/admin/getConfig
 
-// Result
+# Result
 {
     "result":{
         "config":{

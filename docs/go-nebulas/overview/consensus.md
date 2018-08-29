@@ -10,7 +10,7 @@ As for the DPoS in Nebulas, it can also be decribed as a state machine.
 
 ### State Machine
 
-![](../../.gitbook/assets/dpos.png)
+![](../../resources/dpos.png)
 
 ### Fork Choice Rules
 
@@ -23,7 +23,7 @@ Here is a draft of PoD. The research on PoD is ongoing [here](https://github.com
 
 ### State Machine
 
-![](../../.gitbook/assets/pod.png)
+![](../../resources/pod.png)
 
 ### Fork Choice Rules
 

@@ -34,6 +34,6 @@ More Details
 
 DIP (TBD)
 
-.. |image0| image:: ../../.gitbook/assets/overview.png
-.. |image1| image:: ../../.gitbook/assets/workflow.png
+.. |image0| image:: ../../resources/overview.png
+.. |image1| image:: ../../resources/workflow.png
 

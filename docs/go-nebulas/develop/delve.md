@@ -137,7 +137,7 @@ dlv调试器提示代码将在cmd/neb/main.go的行号80行停住，注意这时
 
 Visual Studio Code是微软公司发布的跨平台代码编辑工具，下载地址：[https://code.visualstudio.com/Download](https://code.visualstudio.com/Download) VS Code需要安装Go插件
 
-![](../../.gitbook/assets/vscode.png)
+![](../../resources/vscode.png)
 
 打开文件夹/Users/xxx/workspace/blockchain/src/github.com/nebulasio/go-nebulas/，在.vscode文件夹下创建两个文件settings.json和launch.json。 settings.json文件内容：
 
@@ -179,7 +179,7 @@ launch.json文件内容：
 }
 ```
 
-在cmd/neb/main.go，neb函数中设置断点，F5运行，Go-Nebulas项目会进行编译运行，停在断点： ![](../../.gitbook/assets/delve-vscode-debug.png)
+在cmd/neb/main.go，neb函数中设置断点，F5运行，Go-Nebulas项目会进行编译运行，停在断点： ![](../../resources/delve-vscode-debug.png)
 
 > 然后，就可以开心的启动Nebulas代码调试之旅！
 

@@ -70,7 +70,7 @@ At first, we need the **Transactions Pool** to cache transactions from network. 
 
 No matter where a new block comes from, we use the same steps to process it as following.
 
-![](../../.gitbook/assets/blockpool.png)
+![](../../resources/blockpool.png)
 
 ## World State
 
@@ -149,7 +149,7 @@ In steps 1~3, we use majority decision to confirm the chunks on canonical chain.
 
 Here is a diagram of this sync procedure:
 
-![](../../.gitbook/assets/the-diagram-of-sync-process.png)
+![](../../resources/the-diagram-of-sync-process.png)
 
 ### Block Downloader
 
@@ -168,5 +168,5 @@ This procedure will repeat until A catch up with the canonical chain.
 
 Here is a diagram of this download procedure:
 
-![](../../.gitbook/assets/the-diagram-of-download-process.png)
+![](../../resources/the-diagram-of-download-process.png)
 

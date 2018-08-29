@@ -179,7 +179,7 @@ make build
 
 编译成功后，将会看到如下信息。
 
-![make build](../../.gitbook/assets/101-01-make-build.png)
+![make build](../../resources/101-01-make-build.png)
 
 ## 运行星云链
 
@@ -328,7 +328,7 @@ cd $GOPATH/src/github.com/nebulasio/go-nebulas
 
 启动成功的话，将会看到如下信息，有`Started Neblet`的日志输出。
 
-![seed node start](../../.gitbook/assets/101-01-seed-node-start.png)
+![seed node start](../../resources/101-01-seed-node-start.png)
 
 默认情况下，使用配置文件`conf/default/config.conf`启动的节点不是矿工节点。
 
@@ -341,15 +341,15 @@ cd $GOPATH/src/github.com/nebulasio/go-nebulas
 
 在这个节点启动后，你会先看到如下信息，表示当前节点正在找种子节点同步。
 
-![start sync](../../.gitbook/assets/101-01-start-sync.png)
+![start sync](../../resources/101-01-start-sync.png)
 
 等待一会儿，将会看到如下信息，表示当前节点已经连上了seed节点完成了同步。
 
-![finish sync](../../.gitbook/assets/101-01-finish-sync.png)
+![finish sync](../../resources/101-01-finish-sync.png)
 
 再等待几分钟，你会看到如下信息，表示当前矿工节点挖出了第一个区块。
 
-![finish sync](../../.gitbook/assets/101-01-mint.png)
+![finish sync](../../resources/101-01-mint.png)
 
 > 提示: 目前的DPoS共识算法，会有21个节点轮流出块。由于我们只启动了21个矿工节点中的一个矿工节点，所以每隔15\*21s才出一个块。你可以启动更多的矿工节点，填补的空缺。但是需要注意，多个节点间的端口号不要相互冲突了。
 

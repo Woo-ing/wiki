@@ -13,7 +13,7 @@ A Radix Tree using address as the key looks like below:
 
 As for a 160-bits address, the max height of the tree is 40
 
-![](../../.gitbook/assets/radix_tree.png)
+![](../../resources/radix_tree.png)
 
 **Problems:** much space for a single entry 40 steps for each lookup
 
@@ -27,7 +27,7 @@ In order to reduce the storage of Radix Tree. The nodes in Merkle Patricia Tree 
 * leaf node: compress nodes using unique suffix
 * branch node: same as node in Radix Tree
 
-![](../../.gitbook/assets/merkle_tree.png)
+![](../../resources/merkle_tree.png)
 
 ## How to store Merkle Patricia Tree
 
@@ -49,7 +49,7 @@ DFS from top to bottom
 
 2.update the hash along the path from bottom to top
 
-![](../../.gitbook/assets/merkle_tree_update.png)
+![](../../resources/merkle_tree_update.png)
 
 **Performance** Each operation costs O\(log\(n\)\)
 

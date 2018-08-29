@@ -169,7 +169,7 @@ cd $GOPATH/src/github.com/nebulasio/go-nebulas
 make build
 ```
 
-Once the building is complete，there will be a executable file `neb` generated under the root directory. ![make build](../../.gitbook/assets/101-01-make-build.png)
+Once the building is complete，there will be a executable file `neb` generated under the root directory. ![make build](../../resources/101-01-make-build.png)
 
 ## Start NEB
 
@@ -310,7 +310,7 @@ cd $GOPATH/src/github.com/nebulasio/go-nebulas
 ./neb -c conf/default/config.conf
 ```
 
-After starting, the following should be visible in the terminal: ![seed node start](../../.gitbook/assets/101-01-seed-node-start.png)
+After starting, the following should be visible in the terminal: ![seed node start](../../resources/101-01-seed-node-start.png)
 
 By default, the node using `conf/default/config.conf` won't mine new blocks. Start your first Nebulas mining node with another commands.
 
@@ -319,7 +319,7 @@ cd $GOPATH/src/github.com/nebulasio/go-nebulas
 ./neb -c conf/example/miner.conf
 ```
 
-After the node starts, if the connection with the seed node is successful, you can see the following log which is in log file `logs/miner/neb.log`: ![node start](../../.gitbook/assets/101-01-node-start.png)
+After the node starts, if the connection with the seed node is successful, you can see the following log which is in log file `logs/miner/neb.log`: ![node start](../../resources/101-01-node-start.png)
 
 > Note: You can start many nodes locally. Please make sure the ports in your node configurations won't conflict with each other.
 
